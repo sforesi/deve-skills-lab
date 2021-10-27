@@ -5,6 +5,7 @@ const router = Router()
 /* GET users listing. */
 
 router.get('/', skillsCtrl.index)
+router.get('/:id', skillsCtrl.show);
 
 router.get('/', function(req, res) {
   skillDb.find({}, function(error, skills) {

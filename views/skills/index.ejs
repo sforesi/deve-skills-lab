@@ -16,7 +16,7 @@
     <ul>
       <% skills.forEach(function(skill) { %>
         <li>
-          <%= skill.text %>
+          <a href="/skills/<%= skill._id %>"><%= skill.text %></a>
             - 
           <%= skill.acquired ? 'acquired' : 'not acquired' %>
         </li>
