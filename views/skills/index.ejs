@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dev Skills Lab, Baby!</title>
+</head>
+<body>
+  <body>
+    <h1>Skills</h1>
+    <a href="/skills">To-Do List</a>
+    <% if(error) { %>
+      <h2><%= error %></h2>
+    <% } %>
+    <ul>
+      <% skills.forEach(function(todo) { %>
+        <li>
+          <%= skill.text %>
+            - 
+          <%= skill.acquired ? 'acquired' : 'not acquired' %>
+        </li>
+      <% }) %>
+    </ul>
+  </body>
+</body>
+</html>
