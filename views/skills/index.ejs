@@ -9,12 +9,12 @@
 <body>
   <body>
     <h1>Skills</h1>
-    <a href="/skills">To-Do List</a>
+    <a href="/skills">Skills</a>
     <% if(error) { %>
       <h2><%= error %></h2>
     <% } %>
     <ul>
-      <% skills.forEach(function(todo) { %>
+      <% skills.forEach(function(skill) { %>
         <li>
           <%= skill.text %>
             - 
